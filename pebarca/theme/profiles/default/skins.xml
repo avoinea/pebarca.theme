@@ -1,0 +1,10 @@
+<object name="portal_skins">
+  <object name="pebarca_theme_templates" meta_type="Filesystem Directory View" directory="pebarca.theme:skins/pebarca_theme_templates"/>
+  <object name="pebarca_theme_images" meta_type="Filesystem Directory View" directory="pebarca.theme:skins/pebarca_theme_images"/>
+  <object name="pebarca_theme_styles" meta_type="Filesystem Directory View" directory="pebarca.theme:skins/pebarca_theme_styles"/>
+  <skin-path name="Pe Barca Theme" based-on="Sunburst Theme">
+    <layer name="pebarca_theme_templates" insert-after="custom"/>
+    <layer name="pebarca_theme_images" insert-after="custom"/>
+    <layer name="pebarca_theme_styles" insert-after="custom"/>
+  </skin-path>
+</object>

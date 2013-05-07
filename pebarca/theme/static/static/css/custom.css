@@ -1,0 +1,121 @@
+.navbar {
+  max-width: 1170px;
+  margin: auto;
+  z-index: 9999;
+}
+
+.navbar .brand {
+  padding-left: 2em;
+}
+
+.navbar .brand img {
+  margin-top: -5px;
+}
+
+.body {
+  padding-top: 40px;
+}
+
+body.dark {
+  background: #5b5b5b;
+}
+
+.page-header {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 2em;
+}
+
+.page-body {
+  background: url("../img/veiw_any_bg.gif") top center no-repeat;
+  background-color: #fbfbfb;
+  padding-top: 4em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.page-body p {
+
+}
+.main-container {
+  background: white;
+  box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+section {
+  padding: 2em;
+  text-align: justify;
+}
+
+section#top {
+  padding: 0 0 2em 0;
+}
+
+i {
+  margin-right: 1em;
+}
+
+.carousel-indicators {
+  top: auto;
+  bottom: 100px;
+}
+
+.carousel-control {
+  background: transparent;
+  border: none;
+}
+
+#slideshow .copy {
+  position: absolute;
+  top: auto;
+  bottom: 25%;
+  right: 100px;
+  z-index: 2000;
+  text-align: left;
+  color: white;
+  text-shadow: 0px 3px black;
+  text-align: right;
+  max-width: 33%;
+  max-height: 60%;
+  overflow: hidden;
+}
+
+#slideshow .copy p {
+  font-size: 30px;
+  font-weight: normal;
+  font-family: ProximaNova, Arial, sans-serif;
+}
+
+#slideshow a#video_prompt {
+  display: block;
+  margin: 24px 0px 21px 0px;
+  padding-top: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  font-family: Arial, sans-serif !Important;
+}
+
+#slideshow a#video_prompt img {
+  position: relative;
+  float: right;
+  box-shadow: 0px 2px 2px black;
+}
+
+.clear {
+  clear: both;
+}
+
+.clear {
+  clear: both;
+  line-height: 0;
+  height: 0;
+}
+
+.copyrights {
+  text-align: center;
+  padding: 2em;
+}

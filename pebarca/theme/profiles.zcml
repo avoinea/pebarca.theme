@@ -1,0 +1,14 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  >
+
+  <genericsetup:registerProfile
+    name="default"
+    title="pebarca.ro theme"
+    directory="profiles/default"
+    description='Diazo Theme for pebarca.ro'
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
+</configure>

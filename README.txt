@@ -1,6 +1,3 @@
-Introduction
-============
-
-
-
-This product may contain traces of nuts.
+pebarca.theme
+=============
+Diazo theme for site pebarca.ro
