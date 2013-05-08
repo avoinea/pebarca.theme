@@ -9,4 +9,14 @@
     <!-- The default theme, used for standard Plone web pages -->
     <theme href="index.html" css:if-content="#visual-portal-wrapper" />
 
+    <drop theme="/html/head/meta" />
+    <drop theme="/html/head/title" />
+
+    <after content="/html/head/title" theme-children="/html/head" />
+    <after content="/html/head/meta" theme-children="/html/head" />
+    <after content="/html/head/base " theme-children="/html/head" />
+
+    <replace css:content="#content" css:theme="#content" />
+    <drop css:content=".documentFirstHeading" />
+
 </rules>
