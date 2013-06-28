@@ -2,21 +2,34 @@
 <rules
     xmlns="http://namespaces.plone.org/diazo"
     xmlns:css="http://namespaces.plone.org/diazo/css"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xi="http://www.w3.org/2001/XInclude"
-    >
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <!-- The default theme, used for standard Plone web pages -->
     <theme href="index.html" css:if-content="#visual-portal-wrapper" />
 
     <drop theme="/html/head/meta" />
     <drop theme="/html/head/title" />
+    <drop theme="/html/head/link" />
+    <drop theme="/html/head/style" />
 
     <after content="/html/head/title" theme-children="/html/head" />
     <after content="/html/head/meta" theme-children="/html/head" />
-    <after content="/html/head/base " theme-children="/html/head" />
+    <after content="/html/head/base | /html/head/style | /html/head/script | /html/head/link | /html/head/comment()"
+        theme-children="/html/head" />
 
-    <replace css:content="#content" css:theme="#content" />
+    <after theme-children="/html/head">
+        <link rel="stylesheet" href="++theme++pebarca.theme/static/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="++theme++pebarca.theme/static/css/jquery.pretty.photo.css" />
+        <link rel="stylesheet" href="++theme++pebarca.theme/static/css/custom.css" />
+        <link rel="stylesheet" href="++theme++pebarca.theme/static/css/bootstrap-responsive.min.css" />
+    </after>
+
+    <replace css:content="#portal-column-content" css:theme="#content" />
     <drop css:content=".documentFirstHeading" />
+    <drop css:content=".documentByLine" />
+    <drop css:content="#viewlet-above-content" />
+    <drop css:content="#viewlet-below-content" />
+
+    <replace css:theme-children=".nav" css:content-children="#portal-globalnav" />
 
 </rules>

@@ -46,11 +46,29 @@ body.dark {
   border-bottom-left-radius: 1em;
 }
 
+#portal-column-content {
+  margin-top: 4em;
+}
+
 #content {
+  font-size: 14px;
+  margin-top: 0;
+}
+
+#slideshow a,
+#slideshow a:visited,
+#slideshow a:hover {
+  color: white ! important;
+  border-bottom: none ! important;
+  text-decoration: none ! important;
+}
+
+#slideshow a.btn-danger,
+#slideshow a.btn-danger:hover {
+  color: white;
 }
 
 section {
-  padding: 2em;
   text-align: justify;
 }
 
@@ -67,9 +85,11 @@ i {
   bottom: 100px;
 }
 
-.carousel-control {
+#content .carousel-control,
+#content a.carousel-control:hover {
   background: transparent;
   border: none;
+  color: white ! important;
 }
 
 #slideshow .copy {
@@ -122,4 +142,24 @@ i {
 .copyrights {
   text-align: center;
   padding: 2em;
+}
+
+#contentActionMenus {
+  float: none;
+}
+
+select {
+  width: auto;
+}
+
+input {
+  height: auto ! important;
+}
+
+.label {
+  white-space: inherit;
+}
+
+.copyrights a, .copyrights a:visited, .copyrights a:hover {
+  color: #08C ! important;
 }

@@ -6,6 +6,12 @@ jQuery(document).ready(function(){
     social_tools: ''
   });
 
+  jQuery("#portaltab-video a").prettyPhoto({
+    default_width: 800,
+    default_height: 460,
+    social_tools: ''
+  });
+
   var resize = function(width){
     if(width < 990){
       jQuery('.copy').hide();
